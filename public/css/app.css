@@ -1,0 +1,19 @@
+.open-nav{
+   padding: 0;
+   width: 89px;
+}
+
+.open-nav .item-link span{
+   display: none;
+}
+.open-nav .item-link {
+   flex-direction: column;
+}
+
+.open-nav  a svg.mr-3{
+   margin-right: 0;
+}
+
+.item-link.active{
+   
+}
