@@ -13,7 +13,34 @@
 .open-nav  a svg.mr-3{
    margin-right: 0;
 }
-
-.item-link.active{
+.active.item-link{
    
+   background-color: rgba(233, 239, 253, var(--bg-opacity));
+
+}
+.active.item-link svg path{
+   --text-opacity: 1;
+   color: rgba(37, 99, 235, var(--text-opacity));
+   fill: currentColor;
+
+
+}
+.active.item-link:before{
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 0;
+   height: 100%;
+   width: 3px;
+   background-color: rgba(37, 99, 235, var(--text-opacity));
+   border-radius: 20px 0 0 20px;
+}
+.item-link:hover svg path{
+ transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.item-link:hover svg path{
+   --text-opacity: 1;
+   color: rgba(37, 99, 235, var(--text-opacity));
+   fill: currentColor;
 }
